@@ -1,0 +1,146 @@
+.info-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+.info-container h1 {
+  font-size: 2rem;
+  color: #D157FA;
+  margin-bottom: 1rem;
+}
+
+.info-container h2 {
+  margin-top: 2rem;
+  color: #8939A4;
+  font-size: 1.5rem;
+}
+
+.info-container p,
+.info-container li {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
+}
+
+.image-text-row {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.info-image {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  flex-shrink: 0;
+}
+
+.side-text {
+  flex: 1;
+  font-size: 1rem;
+  color: #444;
+}
+
+@media screen and (max-width: 768px) {
+  .image-text-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .info-image {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .side-text {
+    width: 100%;
+  }
+}
+
+/* Estilos para el formulario de apoyo */
+.formulario-apoyo {
+  background: #f5f8fa;
+  border-radius: 8px;
+  padding: 1.5em;
+  margin-top: 1em;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+}
+
+.formulario-apoyo div {
+  margin-bottom: 1em;
+}
+
+.formulario-apoyo label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.3em;
+  color: #8939A4;
+}
+
+.formulario-apoyo input,
+.formulario-apoyo textarea {
+  width: 100%;
+  padding: 0.5em;
+  border: 1px solid #bfc9d1;
+  border-radius: 5px;
+  font-size: 1em;
+  background: #fff;
+  resize: vertical;
+}
+
+.formulario-apoyo textarea {
+  min-height: 60px;
+  max-height: 200px;
+}
+
+.formulario-apoyo button[type="submit"] {
+  background: #D157FA !important;
+  color: #fff;
+  margin-top: 0.5em;
+  padding: 0.6em 1.2em;
+  border-radius: 5px;
+  border: none;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.formulario-apoyo button[type="submit"]:hover {
+  background: #FA4372 !important; 
+}
+
+/* Botón personalizado para mostrar/ocultar el formulario */
+
+.cont-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+}
+
+.botoncito {
+  background: #D157FA;
+  color: #fff;
+  margin-top: 0.5em;
+  padding: 0.6em 1.2em;
+  border-radius: 5px;
+  border: none;
+  font-size: 1em;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 6px rgba(209,87,250,0.08);
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.botoncito:hover {
+  background: #FA4372;
+  transform: translateY(-2px) scale(1.03);
+}
